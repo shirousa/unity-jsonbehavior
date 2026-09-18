@@ -43,16 +43,19 @@ GUI positional data — all three at once.
 
 ## Quick start
 
-1. Place a JSON file declaring your behavior as a `.json` TextAsset in your
-   project (see the schema below).
-2. Select that JSON in the Project window, right-click →
-   `Create > Behavior > Import JSON to Behavior Graph`.
-3. A `.asset` (Behavior Graph asset) with the same name is generated in the
-   same folder.
-4. Drag the generated `.asset` onto a `BehaviorGraphAgent` and use it like any
-   other Behavior Graph.
+**Requirements:** Unity **6000.6+** · [Unity Behavior](https://docs.unity3d.com/Packages/com.unity.behavior@latest) `1.0.16` (resolved automatically — see [Requirements](#requirements) below for the full list).
 
-To call it directly from code:
+1. **Install** — Package Manager → `+` → *Add package from git URL* →
+   `https://github.com/shirousa/unity-jsonbehavior.git`
+2. **Author** — declare your behavior tree as a `.json` TextAsset in your
+   project (see the [JSON schema](#json-schema) below).
+3. **Import** — select that JSON in the Project window, right-click →
+   `Create > Behavior > Import JSON to Behavior Graph`. A `.asset` with the
+   same name is generated in the same folder.
+4. **Use it** — drag the generated `.asset` onto a `BehaviorGraphAgent` and
+   use it like any other Behavior Graph.
+
+Or call it directly from code:
 
 ```csharp
 using Org.Shirousa.JsonBehavior.Editor;

@@ -34,11 +34,16 @@ Unity Behaviorは強力だが、著者フォーマットが「ビジュアルグ
 
 ## クイックスタート
 
-1. 行動を宣言するJSONファイルを`.json`のTextAssetとしてプロジェクトに置く（下記スキーマ参照）
-2. Project WindowでそのJSONを選択し、右クリック →
-   `Create > Behavior > Import JSON to Behavior Graph`
-3. 同じ場所に同名の`.asset`（Behavior Graph資産）が生成される
-4. 生成された`.asset`を`BehaviorGraphAgent`にドラッグ＆ドロップして使う（通常のBehavior Graphと同じ）
+**必要環境:** Unity **6000.6以降** · [Unity Behavior](https://docs.unity3d.com/Packages/com.unity.behavior@latest) `1.0.16`（自動的に解決される。全リストは下記[必要環境](#必要環境)を参照）
+
+1. **インストール** — Package Manager → `+` → *Add package from git URL* →
+   `https://github.com/shirousa/unity-jsonbehavior.git`
+2. **記述** — 行動を宣言するJSONファイルを`.json`のTextAssetとしてプロジェクトに置く
+   （下記[JSONスキーマ](#jsonスキーマ)参照）
+3. **転写** — Project WindowでそのJSONを選択し、右クリック →
+   `Create > Behavior > Import JSON to Behavior Graph`。同じ場所に同名の`.asset`が生成される
+4. **利用** — 生成された`.asset`を`BehaviorGraphAgent`にドラッグ＆ドロップして使う
+   （通常のBehavior Graphと同じ）
 
 コードから直接呼び出す場合：
 
