@@ -1,0 +1,31 @@
+{
+  "name": "org.shirousa.jsonbehavior",
+  "version": "0.1.0",
+  "displayName": "JSON Behavior Import for Unity Behavior",
+  "description": "Author Unity Behavior graphs as plain JSON and transcribe them into native, fully-compiled .asset files — no visual editor required. Built for AI-assisted workflows: JSON is easy for an LLM or coding agent to generate, review as a diff, and validate, unlike a node graph's positional layout. Existing Action/Condition nodes (yours and Unity's 45 built-ins) run completely unmodified, with full native debugger support.",
+  "unity": "6000.6",
+  "keywords": [
+    "behavior",
+    "behavior tree",
+    "ai",
+    "json",
+    "codegen",
+    "automation"
+  ],
+  "author": {
+    "name": "Shirousa",
+    "url": "https://shirousa.org/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "com.unity.behavior": "1.0.16",
+    "com.unity.nuget.newtonsoft-json": "3.2.2"
+  },
+  "samples": [
+    {
+      "displayName": "Pet AI",
+      "description": "A minimal pet AI declaration that follows the player and switches behavior on aggro.",
+      "path": "Samples~/PetAI"
+    }
+  ]
+}
