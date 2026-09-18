@@ -1,0 +1,36 @@
+{
+  "name": "PetDefault",
+  "blackboard": [
+    { "name": "Self", "type": "GameObject" },
+    { "name": "Player", "type": "GameObject" }
+  ],
+  "root": {
+    "type": "selector",
+    "children": [
+      {
+        "type": "guard",
+        "requiresAll": true,
+        "conditions": [
+          {
+            "condition": "HasHateCondition",
+            "fields": [{ "name": "Self", "variable": "Self" }]
+          }
+        ],
+        "child": {
+          "type": "action",
+          "action": "CancelNavigationAction",
+          "fields": [{ "name": "Self", "variable": "Self" }]
+        }
+      },
+      {
+        "type": "action",
+        "action": "FollowPlayerAction",
+        "fields": [
+          { "name": "Agent", "variable": "Self" },
+          { "name": "Player", "variable": "Player" },
+          { "name": "Distance", "literal": "3" }
+        ]
+      }
+    ]
+  }
+}
