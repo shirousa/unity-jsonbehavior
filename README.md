@@ -46,7 +46,7 @@ GUI positional data — all three at once.
 **Requirements:** Unity **6000.6+** · [Unity Behavior](https://docs.unity3d.com/Packages/com.unity.behavior@latest) `1.0.16` (resolved automatically — see [Requirements](#requirements) below for the full list).
 
 1. **Install** — Package Manager → `+` → *Add package from git URL* →
-   `https://github.com/shirousa/unity-jsonbehavior.git`
+   `https://github.com/shirousa/unity-jsonbehavior.git#main`
 2. **Author** — declare your behavior tree as a `.json` TextAsset in your
    project (see the [JSON schema](#json-schema) below).
 3. **Import** — select that JSON in the Project window, right-click →

@@ -37,7 +37,7 @@ Unity Behaviorは強力だが、著者フォーマットが「ビジュアルグ
 **必要環境:** Unity **6000.6以降** · [Unity Behavior](https://docs.unity3d.com/Packages/com.unity.behavior@latest) `1.0.16`（自動的に解決される。全リストは下記[必要環境](#必要環境)を参照）
 
 1. **インストール** — Package Manager → `+` → *Add package from git URL* →
-   `https://github.com/shirousa/unity-jsonbehavior.git`
+   `https://github.com/shirousa/unity-jsonbehavior.git#main`
 2. **記述** — 行動を宣言するJSONファイルを`.json`のTextAssetとしてプロジェクトに置く
    （下記[JSONスキーマ](#jsonスキーマ)参照）
 3. **転写** — Project WindowでそのJSONを選択し、右クリック →
